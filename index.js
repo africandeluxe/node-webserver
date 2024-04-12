@@ -28,13 +28,29 @@ const server = http.createServer((req, res) => {
       // Home page
       serveStaticFile('home.html', 'text/html');
       break;
-    case '/about':
+    case '/about.html':
       // About page
       serveStaticFile('about.html', 'text/html');
       break;
-    case '/contact':
+    case '/contact.html':
       // Contact page
       serveStaticFile('contact.html', 'text/html');
+      break;
+      case '/breakfast.html':
+      // Breakfast page
+      serveStaticFile('breakfast.html', 'text/html');
+      break;
+      case '/lunch.html':
+      // lunch page
+      serveStaticFile('lunch.html', 'text/html');
+      break;
+      case '/dinner.html':
+      // Dinner page
+      serveStaticFile('dinner.html', 'text/html');
+      break;
+      case '/dessert.html':
+      // Dessert page
+      serveStaticFile('dessert.html', 'text/html');
       break;
     case '/data':
       // Data route with query parameter handling
