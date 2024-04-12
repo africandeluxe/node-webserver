@@ -48,7 +48,7 @@ const server = http.createServer((req, res) => {
       // Dinner page
       serveStaticFile('dinner.html', 'text/html');
       break;
-      case '/dessert.html':
+      case '/desserts.html':
       // Dessert page
       serveStaticFile('desserts.html', 'text/html');
       break;
