@@ -50,7 +50,7 @@ const server = http.createServer((req, res) => {
       break;
       case '/dessert.html':
       // Dessert page
-      serveStaticFile('dessert.html', 'text/html');
+      serveStaticFile('desserts.html', 'text/html');
       break;
     case '/data':
       // Data route with query parameter handling
