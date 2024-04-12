@@ -10,7 +10,7 @@ const server = http.createServer((req, res) => {
 
   // Function to serve static files
   const serveStaticFile = (fileName, contentType) => {
-    const filePath 0 path.join(__dirname, 'html', fileName);
+    const filePath = path.join(__dirname, 'html', fileName);
     fs.readFile(filePath, (err, data) => {
       if (err) {
         res.writeHead(404, { 'Content-Type': 'text/plain' });
